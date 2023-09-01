@@ -10,8 +10,6 @@ params = {
     'tag':tag
 }
 
-#https://giphy.com/embed/5PSPV1ucLX31u
-
 response = requests.get(url, params=params).json()
 
 gif = response['data']['embed_url'] #this is the url of the giphy
